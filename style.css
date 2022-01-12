@@ -1,0 +1,129 @@
+body {
+  background-color: #911;
+  margin: 0;
+  overflow-x: hidden;
+}
+header {
+  background-color: #511;
+  left: 0;
+  position: sticky;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+#header-img {
+  border-radius: 100%;
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+  min-width: 25px;
+  width: 4vw;
+}
+#nav-bar {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.nav-link {
+  background-color: transparent;
+  border: outset 2px #0000;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+  background-color: #0005;
+  border: inset 2px #0005;
+  text-decoration: underline;
+}
+
+#welcome {
+  background-color: #f22;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+#company-name {
+  animation: bounce 10s infinite;
+  position: relative;
+  font-size: 2.5em;
+}
+@keyframes bounce {
+  0% {
+    top: 25px;
+    left: 0;
+  }
+  10% {
+    left: -40%;
+  }
+  30% {
+    left: 40%;
+  }
+  40% {
+    left: 0;
+    top: 0;
+  }
+  45% {
+    top: -50px;
+    left: 0;
+  }
+  55% {
+    top: 25px;
+    left: 0;
+  }
+  100% {
+    top: 25px;
+    left: 0;
+  }
+}
+#form {
+  width: 100%;
+}
+#form input[type=email] {
+  background-color: #fffb;
+  border: inset 2px transparent;
+  margin: 10px;
+  outline: none;
+  padding: 5px;
+  width: 15vw;
+  transition: all 0.2s ease-in-out;
+}
+#form input[type=email]:focus {
+  border: inset 2px #f22a
+}
+#submit {
+  background-color: #511;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  outline: none;
+  padding: 10px 40px;
+}
+
+#video-ad {
+  text-align: center;
+}
+#video {
+  transform: scale(0.9)
+}
+
+footer {
+  background-color: #511;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+footer a {
+  background-color: #fff2;
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
