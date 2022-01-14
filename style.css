@@ -21,7 +21,7 @@ header {
   margin-left: 10px;
   margin-right: 20px;
   min-width: 25px;
-  width: 4vw;
+  width: 60px;
 }
 #nav-bar {
   color: #fff;
@@ -92,7 +92,7 @@ header {
   margin: 10px;
   outline: none;
   padding: 5px;
-  width: 15vw;
+  width: 10em;
   transition: all 0.2s ease-in-out;
 }
 #form input[type=email]:focus {
@@ -109,10 +109,12 @@ header {
 }
 
 #video-ad {
+  margin-top: 20px;
   text-align: center;
 }
 #video {
-  transform: scale(0.9)
+  hieght: auto;
+  width: 90vw;
 }
 
 #about  {
@@ -121,12 +123,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 10px 20px;
 }
 .section-bubble {
   background-color: #f22;
   border-radius: 100%;
   color: #fff;
   margin: 20px 50px;
+  margin-right: 5px;
   padding: 30px;
 }
 
@@ -144,6 +148,7 @@ header {
   border-radius: 10px;
   color: #000;
   flex: 0 0 200px;
+  flex-wrap: wrap;
   margin: 10px;
   padding: 15px;
   text-align: center;
@@ -166,6 +171,11 @@ header {
 }
 .select-price:hover {
   border: inset 2px #211;
+}
+@media (max-width: 786px) {
+  #prices {
+    flex-direction: column;
+  }
 }
 
 
